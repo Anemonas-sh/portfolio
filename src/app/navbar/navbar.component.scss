@@ -1,0 +1,27 @@
+@import "src/assets/stylesheets/variables";
+
+:host {
+  height: 50px;
+}
+
+.row {
+  height: 100%;
+}
+
+.active {
+  color: $primary-color;
+
+  //&::after {
+  //  content: " ";
+  //  background: transparent linear-gradient(28deg, #6362D7 0%, #FF8FE2 100%) 0 0 no-repeat padding-box;
+  //  width: 8px;
+  //  height: 8px;
+  //  display: block;
+  //  border-radius: 4px;
+  //  margin: auto;
+  //}
+}
+
+.btn {
+  cursor: pointer;
+}
