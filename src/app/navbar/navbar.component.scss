@@ -23,5 +23,15 @@
 }
 
 .btn {
+  height: 30px;
+  align-items: inherit;
   cursor: pointer;
+  background: transparent linear-gradient(59deg, #6362D7 0%, #FF8FE2 100%) 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  color: white;
+
+  &.btn-plain {
+  background: none;
+  color: black;
+}
 }
