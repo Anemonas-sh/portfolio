@@ -11,11 +11,14 @@ body {
   height: 100vh;
   letter-spacing: 0;
   font-family: 'Poppins', sans-serif;
-  font-size: 14px;
+  font-size: 0.9em;
+  color: #555555;
 }
 
-.no-padding {
-  padding: 0 !important;
+h1 {
+  font-weight: normal;
+  margin: 0;
+  font-size: 1.8em;
 }
 
 .row {
@@ -28,61 +31,73 @@ body {
 .col-1 {
   width: 8.3333333333%;
   text-align: center;
+  text-align: -webkit-center;
 }
 
 .col-2 {
   width: 16.6666666667%;
   text-align: center;
+  text-align: -webkit-center;
 }
 
 .col-3 {
   width: 25%;
   text-align: center;
+  text-align: -webkit-center;
 }
 
 .col-4 {
   width: 33.3333333333%;
   text-align: center;
+  text-align: -webkit-center;
 }
 
 .col-5 {
   width: 41.6666666667%;
   text-align: center;
+  text-align: -webkit-center;
 }
 
 .col-6 {
   width: 50%;
   text-align: center;
+  text-align: -webkit-center;
 }
 
 .col-7 {
   width: 58.3333333333%;
   text-align: center;
+  text-align: -webkit-center;
 }
 
 .col-8 {
   width: 66.6666666667%;
   text-align: center;
+  text-align: -webkit-center;
 }
 
 .col-9 {
   width: 75%;
   text-align: center;
+  text-align: -webkit-center;
 }
 
 .col-10 {
   width: 83.3333333333%;
   text-align: center;
+  text-align: -webkit-center;
 }
 
 .col-11 {
   width: 91.6666666667%;
   text-align: center;
+  text-align: -webkit-center;
 }
 
 .col-12 {
   width: 100%;
   text-align: center;
+  text-align: -webkit-center;
 }
 
 .offset-1 {
@@ -131,4 +146,32 @@ body {
 
 .offset-12 {
   margin-left: 100%
+}
+
+.btn {
+  height: 32px;
+  padding: 0 6px;
+  align-items: inherit;
+  cursor: pointer;
+  background: transparent linear-gradient(59deg, #6362D7 0%, #FF8FE2 100%) 0 0 no-repeat padding-box;
+  border-radius: 4px;
+  color: white;
+  max-width: 128px;
+  min-width: 100px;
+  display: inline-block;
+
+  &.btn-plain {
+    background: white;
+    border: #9D60EB solid 1px;
+    color: $primary-color;
+  }
+
+  span {
+    vertical-align: middle;
+    vertical-align: -webkit-baseline-middle;
+  }
+
+  + .btn {
+    margin-left: 16px;
+  }
 }
