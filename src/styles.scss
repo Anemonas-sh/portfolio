@@ -154,7 +154,7 @@ h2 {
   padding: 0 6px;
   align-items: inherit;
   cursor: pointer;
-  background: transparent linear-gradient(59deg, #6362D7 0%, #FF8FE2 100%) 0 0 no-repeat padding-box;
+  background: transparent linear-gradient(59deg, $secondary-color 0%, $accent-color 100%) 0 0 no-repeat padding-box;
   border-radius: 4px;
   color: white;
   max-width: 128px;
@@ -164,7 +164,7 @@ h2 {
 
   &.btn-plain {
     background: white;
-    border: #9D60EB solid 1px;
+    border: $primary-color solid 1px;
     color: $primary-color;
   }
 
