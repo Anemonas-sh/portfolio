@@ -14,7 +14,8 @@ body {
   color: #555555;
 }
 
-h1 {
+h1,
+h2 {
   font-weight: normal;
   margin: 0;
   font-size: 1.8em;
@@ -158,6 +159,7 @@ h1 {
   max-width: 128px;
   min-width: 100px;
   display: inline-block;
+  text-align: center;
 
   &.btn-plain {
     background: white;
