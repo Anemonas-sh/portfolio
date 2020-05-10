@@ -9,7 +9,7 @@
 }
 
 .active {
-  color: $primary-color;
+  color: $primary-color !important;
 
   //&::after {
   //  content: " ";
@@ -31,7 +31,12 @@
   color: white;
 
   &.btn-plain {
-  background: none;
-  color: black;
-}
+    background: none;
+    color: initial;
+  }
+
+  span {
+    vertical-align: middle;
+    vertical-align: -webkit-baseline-middle;
+  }
 }
