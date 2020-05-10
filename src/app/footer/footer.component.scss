@@ -26,21 +26,29 @@ p.title {
   font-weight: bold;
 }
 
-div.background {
+div.first-polygon {
   position: relative;
-  -webkit-clip-path: polygon(0 20vh, 100% 0, 100% 100%, 0 100%);
-  clip-path: polygon(0 20vh, 100% 0, 100% 100%, 0 100%);
-  background: transparent linear-gradient(4deg, #FFFFFF 0%, #DFF0FF 100%) 0% 0% no-repeat padding-box;;
-  color: #777777;
+  -webkit-clip-path: polygon(0 10vh, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 10vh, 100% 0, 100% 100%, 0 100%);
+  background: transparent linear-gradient(4deg, #FFFFFF 0%, #DFF0FF 100%) 0 0 no-repeat padding-box;
   width: 100vw;
   height: 30vh;
 
-  span {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  div.second-polygon {
+    -webkit-clip-path: polygon(0 15vh, 100% 5vh, 100% 100%, 0 100%);
+    clip-path: polygon(0 15vh, 100% 5vh, 100% 100%, 0 100%);
+    background: transparent linear-gradient(5deg, #FFFFFF 0%, #D5ECFF 100%) 0 0 no-repeat padding-box;
+    color: #777777;
+    width: 100vw;
+    height: 30vh;
+
+    span {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }
 
