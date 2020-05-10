@@ -1,0 +1,47 @@
+@import "./src/assets/stylesheets/variables";
+
+div.row {
+  align-items: normal;
+
+  img {
+    height: 60px;
+    margin: auto;
+  }
+
+  a {
+    text-decoration: none;
+    text-align: left;
+    font-size: 13px;
+    color: #777777;
+    opacity: 0.8;
+  }
+
+
+}
+
+p.title {
+  text-align: left;
+  font-size: 15px;
+  color: #101C21;
+  font-weight: bold;
+}
+
+div.background {
+  position: relative;
+  -webkit-clip-path: polygon(0 20vh, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 20vh, 100% 0, 100% 100%, 0 100%);
+  background: transparent linear-gradient(4deg, #FFFFFF 0%, #DFF0FF 100%) 0% 0% no-repeat padding-box;;
+  color: #777777;
+  width: 100vw;
+  height: 30vh;
+
+  span {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+

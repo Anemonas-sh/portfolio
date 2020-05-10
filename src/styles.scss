@@ -9,6 +9,7 @@
 body {
   margin: 0;
   height: 100vh;
+  letter-spacing: 0;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
 }
@@ -96,7 +97,7 @@ body {
   margin-left: 25%;
 }
 
-.col-4 {
+.offset-4 {
   margin-left: 33.3333333333%;
 }
 
