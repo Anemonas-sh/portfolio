@@ -8,6 +8,14 @@
   height: 100%;
 }
 
+.logo {
+  background-image: url("src/assets/images/logo-dark.png");
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .navbar div {
   cursor: pointer;
 
