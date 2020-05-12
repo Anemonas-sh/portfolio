@@ -1,3 +1,12 @@
 section {
   padding: 16px 0;
 }
+
+section.blue {
+  background: transparent linear-gradient(1deg, #C9E6FF 0%, #EFF7FF 100%) 0 0 no-repeat padding-box;;
+  opacity: 1;
+}
+
+form#contact-form {
+  padding: 35px;
+}
