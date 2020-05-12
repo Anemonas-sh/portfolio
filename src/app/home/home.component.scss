@@ -10,6 +10,7 @@ img {
 }
 
 .card {
+  position: relative;
   height: 100%;
   text-align: center;
 }
@@ -28,4 +29,19 @@ section.blue {
 
 form#contact-form {
   padding: 35px;
+}
+
+div.humans {
+  position: absolute;
+  height: 250px;
+  bottom: 0;
+
+  img.human {
+    position: absolute;
+    object-fit: contain;
+    z-index: 1;
+    bottom: 32px;
+    left: 0;
+    width: min-content;
+  }
 }
