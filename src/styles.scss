@@ -150,7 +150,7 @@ h2 {
 }
 
 .btn {
-  height: 32px;
+  height: 48px;
   padding: 0 6px;
   align-items: inherit;
   cursor: pointer;
@@ -161,6 +161,7 @@ h2 {
   min-width: 100px;
   display: inline-block;
   text-align: center;
+  border: none;
 
   &.btn-plain {
     background: white;
