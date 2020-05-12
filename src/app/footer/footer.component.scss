@@ -1,5 +1,9 @@
 @import "./src/assets/stylesheets/variables";
 
+:host {
+  padding-top: 32px;
+}
+
 div.row {
   align-items: normal;
 

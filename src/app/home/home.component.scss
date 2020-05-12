@@ -10,6 +10,7 @@ img {
 }
 
 .card {
+  position: relative;
   height: 100%;
   text-align: center;
 }
@@ -17,7 +18,7 @@ img {
 .card-grid {
   margin-top: 16px;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 16px;
 }
 
@@ -36,4 +37,19 @@ form#contact-form {
   background: #FFFFFF 0 0 no-repeat padding-box;
   box-shadow: 0 20px 60px #3E3E3E29;
   border-radius: 8px;
+}
+
+div.humans {
+  position: absolute;
+  height: 250px;
+  bottom: 0;
+
+  img.human {
+    position: absolute;
+    object-fit: contain;
+    z-index: 1;
+    bottom: 32px;
+    left: 0;
+    width: min-content;
+  }
 }
