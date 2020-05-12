@@ -8,3 +8,11 @@ img {
   height: 100%;
   max-width: 720px;
 }
+
+.card {
+  height: 100%;
+}
+
+.card + .card {
+  margin-left: 16px;
+}
