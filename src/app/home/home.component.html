@@ -157,32 +157,32 @@
     <div class="row">
       <div class="col-8 offset-2">
         <div class="form-card">
-          <form id="contact-form" method="post">
+          <form #contactForm="ngForm" (ngSubmit)="makeRequest(contactForm)" id="contact-form" method="post" ngNativeValidate>
             <div class="row no-padding">
               <div class="input-field col-6">
-                <input id="first-name" type="text" name="first-name" required>
+                <input id="first-name" type="text" name="firstName" ngModel required>
                 <label for="first-name">Nome:</label>
               </div>
               <div class="input-field col-6">
-                <input id="last-name" type="text" name="last-name" required>
+                <input id="last-name" type="text" name="lastName" ngModel required>
                 <label for="last-name">Sobrenome:</label>
               </div>
             </div>
             <div class="row no-padding">
               <div class="input-field col-12">
-                <input id="company-name" type="text" name="company-name">
+                <input id="company-name" type="text" name="companyName" ngModel>
                 <label for="company-name">Nome da empresa:</label>
               </div>
             </div>
             <div class="row no-padding">
               <div class="input-field col-12">
-                <input id="email" type="email" name="email" required>
+                <input id="email" type="email" name="email" ngModel required>
                 <label for="email">E-mail para contato:</label>
               </div>
             </div>
             <div class="row no-padding">
               <div class="input-field col-12">
-                <select id="reason-select" name="reason-select">
+                <select id="reason-select" name="reason" ngModel required>
                   <option value="" selected>------</option>
                   <option value="Doubts">Dúvidas</option>
                   <option value="Service contract">Contrato de serviços</option>
@@ -192,7 +192,7 @@
             </div>
             <div class="row no-padding">
               <div class="input-field col-12">
-                <textarea id="message" name="message" required></textarea>
+                <textarea id="message" name="message" ngModel required></textarea>
                 <label for="message">Escreva aqui sua mensagem:</label>
               </div>
             </div>
