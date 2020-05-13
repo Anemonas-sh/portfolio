@@ -53,3 +53,7 @@ div.humans {
     width: min-content;
   }
 }
+
+a + a {
+  margin-left: 16px;
+}

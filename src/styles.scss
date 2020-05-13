@@ -151,7 +151,7 @@ h2 {
 
 .btn {
   height: 36px;
-  padding: 0 6px;
+  padding: 0 12px;
   align-items: inherit;
   cursor: pointer;
   background: transparent linear-gradient(59deg, $primary-color 0%, $secondary-color 100%) 0 0 no-repeat padding-box;
@@ -172,9 +172,5 @@ h2 {
   span {
     vertical-align: middle;
     vertical-align: -webkit-baseline-middle;
-  }
-
-  + .btn {
-    margin-left: 16px;
   }
 }

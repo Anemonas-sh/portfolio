@@ -15,7 +15,7 @@ div.row {
   a {
     text-decoration: none;
     text-align: left;
-    font-size: 13px;
+    font-size: 1em;
     color: #777777;
     opacity: 0.8;
   }
@@ -54,4 +54,6 @@ div.first-polygon {
   }
 }
 
-
+a:hover {
+  font-weight: bold;
+}

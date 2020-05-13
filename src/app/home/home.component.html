@@ -14,13 +14,17 @@
 
       <div class="row no-padding">
         <div class="margin-auto">
-          <button class="btn">
-            Portfólio
-          </button>
+          <a href="#specialty">
+            <button class="btn">
+              Especialidades
+            </button>
+          </a>
 
-          <button class="btn btn-plain">
-            Saiba mais
-          </button>
+          <a href="#about">
+            <button class="btn btn-plain">
+              Saiba mais
+            </button>
+          </a>
         </div>
       </div>
     </div>
@@ -47,9 +51,11 @@
         e rápidas é nossa principal filosofia.
       </p>
 
-      <button class="btn">
-        Saiba mais
-      </button>
+      <a href="#specialty">
+        <button class="btn">
+          Especialidades
+        </button>
+      </a>
     </div>
 
     <div class="col-6">
@@ -75,9 +81,11 @@
         dia dos seus problemas.
       </p>
 
-      <button class="btn">
-        Saiba mais
-      </button>
+      <a href="#contact">
+        <button class="btn">
+          Contato
+        </button>
+      </a>
     </div>
   </div>
 </section>
@@ -157,7 +165,8 @@
     <div class="row">
       <div class="col-8 offset-2">
         <div class="form-card">
-          <form #contactForm="ngForm" (ngSubmit)="makeRequest(contactForm)" id="contact-form" method="post" ngNativeValidate>
+          <form #contactForm="ngForm" (ngSubmit)="makeRequest(contactForm)" id="contact-form" method="post"
+                ngNativeValidate>
             <div class="row no-padding">
               <div class="input-field col-6">
                 <input id="first-name" type="text" name="firstName" ngModel required>
