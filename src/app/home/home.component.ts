@@ -18,10 +18,15 @@ export class HomeComponent implements OnInit {
     if (contactForm.invalid) {
       return;
     }
-    contactForm.resetForm();
     this.contactService.requestContact(contactForm.value).subscribe(
       res => {
-        alert('tudo certo!');
+        alert('Requisição de contato enviada. Aguarde um retorno!');
+      },
+      err => {
+        alert('Algo deu errado, tente novamente mais tarde!');
+      },
+      () => {
+        contactForm.resetForm();
       }
     );
   }

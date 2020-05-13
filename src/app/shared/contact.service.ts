@@ -9,7 +9,7 @@ import {catchError, retry} from 'rxjs/operators';
 export class ContactService {
 
   // Url
-  url = 'http://';
+  url = 'https://script.google.com/macros/s/AKfycbwn4h3IsKyaQ4puBk9XUMmCJ7AehwjsOFZa8f7j2V3bG18F-NHf/exec';
 
   constructor(private http: HttpClient) {
   }
@@ -17,7 +17,7 @@ export class ContactService {
   // Http Headers
   httpOptions = {
     headers: new HttpHeaders({
-      'Content-Type': 'application/json'
+      'Content-Type' : 'text/plain;charset=utf-8'
     })
   };
 
@@ -39,7 +39,7 @@ export class ContactService {
       // Get server-side error
       errorMessage = `Error Code: ${error.status}\nMessage: ${error.message}`;
     }
-    console.log(errorMessage);
+
     return throwError(errorMessage);
   }
 
