@@ -2,8 +2,8 @@
   border-radius: 8px;
   box-shadow: 0 10px 30px #99999933;
 
-  .header{
-    padding: 16px;
+  .header {
+    padding: 24px;
   }
 
   img.avatar {
@@ -11,12 +11,13 @@
   }
 
   .body {
-    padding: 16px;
+    padding: 24px;
   }
-    .title {
-      font-size: 1.4em;
-      padding-bottom: 12px;
-    }
+
+  .title {
+    font-size: 1.4em;
+    padding-bottom: 12px;
+  }
 
   .header + .body {
     padding-top: 0;
