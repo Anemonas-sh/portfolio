@@ -1,17 +1,30 @@
 @import "src/assets/stylesheets/variables";
 
 :host {
-  height: 50px;
   padding-top: 16px;
 }
 
 .row {
   height: 100%;
+  min-height: 30px;
+}
+
+@media (max-width: 1024px) {
+  .row.container {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1025px) {
+  .row.container {
+    flex-direction: row;
+  }
 }
 
 .logo {
   background-image: url("src/assets/images/logo-dark.png");
   height: 100%;
+  min-height: 50px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -27,16 +40,6 @@
 
   &.active {
     color: $primary-color;
-
-    //&::after {
-    //  content: " ";
-    //  background: transparent linear-gradient(28deg, #6362D7 0%, #FF8FE2 100%) 0 0 no-repeat padding-box;
-    //  width: 8px;
-    //  height: 8px;
-    //  display: block;
-    //  border-radius: 4px;
-    //  margin: auto;
-    //}
   }
 }
 

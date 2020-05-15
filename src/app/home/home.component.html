@@ -1,15 +1,15 @@
 <section>
   <div class="row">
-    <div class="offset-2 col-8">
+    <div class="s-col-12 l-col-12">
       <h1 class="text-center">
-        <span class="text-bold">Nós criamos soluções simples</span><br/>
+        Oferecemos <span class="text-bold">programação outsourcing</span><br/>
         para os seus problemas complexos
       </h1>
 
-      <p>
-        Anemonas tem como objetivo construir tecnologias de alto nível que facilitam e automatizam processos, minimizam
-        os esforços operacionais e trazem seus projetos à vida com a stack de tecnologia mais efetiva e atualizada do
-        mercado.
+      <p class="text-center">
+        <span class="text-bold">É essencial para empresas visionárias ter uma equipe de tecnologia com profissionais ágeis e capacitados.</span><br/>
+        No entanto, o mercado tem uma grande demanda e nem sempre é fácil achar esses profissionais... Sorte sua que não
+        precisa mais procurar, acabou de <span class="text-bold">encontrá-los!</span>
       </p>
 
       <div class="row no-padding">
@@ -31,24 +31,25 @@
   </div>
 
   <div class="row">
-    <div class="col-12">
+    <div class="s-col-12 l-col-12">
       <img src="assets/images/scenes/scene-1.png">
     </div>
   </div>
 </section>
 
 <section id="about">
-  <div class="row">
-    <div class="col-6 text-left">
+  <div class="row s-column">
+    <div class="s-col-12 l-col-6 text-left">
       <h2>
-        O processo do<br/>
-        <span class="text-bold">nosso trabalho</span>
+        Quais os benefícios do<br/>
+        <span class="text-bold">nosso outsourcing?</span>
       </h2>
 
       <p>
-        Hoje em dia, tudo muda e acontece rapidamente, portanto nós também. Utilizamos metodologias ágeis para criação,
-        desenvolvimento, validação e teste de todos os projetos. Sempre estar perto do cliente, com entregas constantes
-        e rápidas é nossa principal filosofia.
+        Utilizando os serviços e os profissionais da Anemonas S.H. sua empresa <span
+        class="text-bold">reduzirá custos</span> com os processos de procura e contratação desses profissionais, terá os
+        profissionais corretos especializados em cada área, poderá livremente <span class="text-bold">focar no core do seu business</span>,
+        e poderá <span class="text-bold">contratar o serviço temporariamente</span> de acordo com sua demanda.
       </p>
 
       <a href="#specialty">
@@ -58,27 +59,27 @@
       </a>
     </div>
 
-    <div class="col-6">
+    <div class="s-col-12 l-col-6">
       <img src="assets/images/scenes/scene-2.png">
     </div>
   </div>
 </section>
 
 <section>
-  <div class="row">
-    <div class="col-6">
+  <div class="row s-column-reverse">
+    <div class="s-col-12 l-col-6">
       <img src="assets/images/scenes/scene-3.png">
     </div>
 
-    <div class="col-6 text-left">
+    <div class="s-col-12 l-col-6 text-left">
       <h2>
-        Estamos aqui para<br/>
-        <span class="text-bold">te ajudar</span> sempre
+        Como ajudamos sua área de <span class="text-bold">tecnologia</span>
       </h2>
 
       <p>
-        Conte conosco para confiar, ajudar e tirar dúvidas sobre as implementações e quais tecnologias utilizar no dia a
-        dia dos seus problemas.
+        Com nossos processos, iremos <span class="text-bold">priorizar e resolver as demandas adequadamente</span>,
+        garantindo a <span class="text-bold">excelência dos serviços oferecidos</span> e <span class="text-bold">estruturando os processos de TI</span>
+        da melhor forma e com as melhores metodologias exigidas pelo mercado tão dinâmico.
       </p>
 
       <a href="#contact">
@@ -100,7 +101,7 @@
     </div>
   </div>
 
-  <div class="row card-grid">
+  <div class="row l-card-grid s-column">
     <div class="card">
       <div class="header">
         <div class="title">Inteligência Artificial</div>
@@ -154,7 +155,7 @@
 <section id="contact" class="blue">
   <div class="container">
     <div class="row">
-      <div class="col-12">
+      <div class="s-col-12 l-col-12">
         <h1 class="text-center">
           Como podemos te ajudar?<br/>
           <span class="text-bold">Contate-nos</span>
@@ -163,34 +164,34 @@
     </div>
 
     <div class="row">
-      <div class="col-8 offset-2">
+      <div class="s-col-12 l-col-8 l-offset-2">
         <div class="form-card">
           <form #contactForm="ngForm" (ngSubmit)="makeRequest(contactForm)" id="contact-form" method="post"
                 ngNativeValidate>
-            <div class="row no-padding">
-              <div class="input-field col-6">
-                <input id="first-name" type="text" name="firstName" ngModel required>
+            <div class="row no-padding s-column">
+              <div class="input-field s-col-12 l-col-6">
+                <input id="first-name" type="text" name="firstName" ngModel required placeholder="José">
                 <label for="first-name">Nome:</label>
               </div>
-              <div class="input-field col-6">
-                <input id="last-name" type="text" name="lastName" ngModel required>
+              <div class="input-field s-col-12 l-col-6">
+                <input id="last-name" type="text" name="lastName" ngModel required placeholder="Silva">
                 <label for="last-name">Sobrenome:</label>
               </div>
             </div>
             <div class="row no-padding">
-              <div class="input-field col-12">
-                <input id="company-name" type="text" name="companyName" ngModel>
+              <div class="input-field s-col-12 l-col-12">
+                <input id="company-name" type="text" name="companyName" ngModel placeholder="Empresa LTDA">
                 <label for="company-name">Nome da empresa:</label>
               </div>
             </div>
             <div class="row no-padding">
-              <div class="input-field col-12">
-                <input id="email" type="email" name="email" ngModel required>
+              <div class="input-field s-col-12 l-col-12">
+                <input id="email" type="email" name="email" ngModel required placeholder="jose@empresa.com">
                 <label for="email">E-mail para contato:</label>
               </div>
             </div>
             <div class="row no-padding">
-              <div class="input-field col-12">
+              <div class="input-field s-col-12 l-col-12">
                 <select id="reason-select" name="reason" ngModel required>
                   <option value="" selected>------</option>
                   <option value="Doubts">Dúvidas</option>
@@ -200,8 +201,8 @@
               </div>
             </div>
             <div class="row no-padding">
-              <div class="input-field col-12">
-                <textarea id="message" name="message" ngModel required></textarea>
+              <div class="input-field s-col-12 l-col-12">
+                <textarea id="message" name="message" ngModel required placeholder="Qual o motivo do seu contato?"></textarea>
                 <label for="message">Escreva aqui sua mensagem:</label>
               </div>
             </div>

@@ -27,7 +27,7 @@ textarea {
   transition: border-color 0.2s;
 
   &::placeholder {
-    color: transparent;
+    opacity: 0.4;
   }
 }
 

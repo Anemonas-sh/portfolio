@@ -6,10 +6,15 @@
 
 div.row {
   align-items: normal;
+  word-break: break-all;
+
+  > div {
+    padding: 0 6px;
+  }
 
   img {
     height: 60px;
-    margin: 30px auto;
+    margin: auto;
   }
 
   a {
@@ -34,7 +39,7 @@ div.first-polygon {
   clip-path: polygon(0 10vh, 100% 0, 100% 100%, 0 100%);
   background: transparent linear-gradient(4deg, #FFFFFF 0%, #DFF0FF 100%) 0 0 no-repeat padding-box;
   width: 100%;
-  height: 30vh;
+  height: 25vh;
 
   div.second-polygon {
     -webkit-clip-path: polygon(0 15vh, 100% 5vh, 100% 100%, 0 100%);
@@ -42,14 +47,14 @@ div.first-polygon {
     background: transparent linear-gradient(5deg, #FFFFFF 0%, #D5ECFF 100%) 0 0 no-repeat padding-box;
     color: #777777;
     width: 100%;
-    height: 30vh;
+    height: 25vh;
 
     span {
       display: block;
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, 100%);
     }
   }
 }

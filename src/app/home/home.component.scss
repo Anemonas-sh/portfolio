@@ -15,11 +15,18 @@ img {
   text-align: center;
 }
 
-.card-grid {
+.s-column .card {
   margin-top: 16px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 16px;
+
+}
+
+@media (min-width: 1025px) {
+  .l-card-grid {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 16px;
+  }
 }
 
 section.blue {

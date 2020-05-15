@@ -19,138 +19,297 @@ h1,
 h2 {
   font-weight: normal;
   margin: 0;
-  font-size: 1.8em;
 }
 
 .row {
   display: flex;
-  padding-left: 16.6666666%;
-  padding-right: 16.6666666%;
   align-items: center;
 }
 
-.col-1 {
-  width: 8.3333333333%;
-  text-align: center;
-  text-align: -webkit-center;
+@media (max-width: 1024px) {
+
+  h1,
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .row {
+    padding-left: 8.3333333%;
+    padding-right: 8.3333333%;
+
+    &.s-column {
+      flex-direction: column;
+    }
+
+    &.s-column-reverse {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .s-none {
+    display: none;
+  }
+
+  .s-col-1 {
+    width: 8.3333333333%;
+    text-align: center;
+    text-align: -webkit-center;
+  }
+
+  .s-col-2 {
+    width: 16.6666666667%;
+    text-align: center;
+    text-align: -webkit-center;
+  }
+
+  .s-col-3 {
+    width: 25%;
+    text-align: center;
+    text-align: -webkit-center;
+  }
+
+  .s-col-4 {
+    width: 33.3333333333%;
+    text-align: center;
+    text-align: -webkit-center;
+  }
+
+  .s-col-5 {
+    width: 41.6666666667%;
+    text-align: center;
+    text-align: -webkit-center;
+  }
+
+  .s-col-6 {
+    width: 50%;
+    text-align: center;
+    text-align: -webkit-center;
+  }
+
+  .s-col-7 {
+    width: 58.3333333333%;
+    text-align: center;
+    text-align: -webkit-center;
+  }
+
+  .s-col-8 {
+    width: 66.6666666667%;
+    text-align: center;
+    text-align: -webkit-center;
+  }
+
+  .s-col-9 {
+    width: 75%;
+    text-align: center;
+    text-align: -webkit-center;
+  }
+
+  .s-col-10 {
+    width: 83.3333333333%;
+    text-align: center;
+    text-align: -webkit-center;
+  }
+
+  .s-col-11 {
+    width: 91.6666666667%;
+    text-align: center;
+    text-align: -webkit-center;
+  }
+
+  .s-col-12 {
+    width: 100%;
+    text-align: center;
+    text-align: -webkit-center;
+  }
+
+  .s-offset-1 {
+    margin-left: 8.3333333333%;
+  }
+
+  .s-offset-2 {
+    margin-left: 16.6666666667%;
+  }
+
+  .s-offset-3 {
+    margin-left: 25%;
+  }
+
+  .s-offset-4 {
+    margin-left: 33.3333333333%;
+  }
+
+  .s-offset-5 {
+    margin-left: 41.6666666667%;
+  }
+
+  .s-offset-6 {
+    margin-left: 50%;
+  }
+
+  .s-offset-7 {
+    margin-left: 58.3333333333%;
+  }
+
+  .s-offset-8 {
+    margin-left: 66.6666666667%;
+  }
+
+  .s-offset-9 {
+    margin-left: 75%;
+  }
+
+  .s-offset-10 {
+    margin-left: 83.3333333333%
+  }
+
+  .s-offset-11 {
+    margin-left: 91.6666666667%
+  }
+
+  .s-offset-12 {
+    margin-left: 100%
+  }
 }
 
-.col-2 {
-  width: 16.6666666667%;
-  text-align: center;
-  text-align: -webkit-center;
-}
+@media (min-width: 1025px) {
 
-.col-3 {
-  width: 25%;
-  text-align: center;
-  text-align: -webkit-center;
-}
+  h1,
+  h2 {
+    font-size: 1.7em;
+  }
 
-.col-4 {
-  width: 33.3333333333%;
-  text-align: center;
-  text-align: -webkit-center;
-}
+  .row {
+    padding-left: 16.6666666%;
+    padding-right: 16.6666666%;
+  }
 
-.col-5 {
-  width: 41.6666666667%;
-  text-align: center;
-  text-align: -webkit-center;
-}
+  .l-none {
+    display: none;
+  }
 
-.col-6 {
-  width: 50%;
-  text-align: center;
-  text-align: -webkit-center;
-}
+  .l-col-1 {
+    width: 8.3333333333%;
+    text-align: center;
+    text-align: -webkit-center;
+  }
 
-.col-7 {
-  width: 58.3333333333%;
-  text-align: center;
-  text-align: -webkit-center;
-}
+  .l-col-2 {
+    width: 16.6666666667%;
+    text-align: center;
+    text-align: -webkit-center;
+  }
 
-.col-8 {
-  width: 66.6666666667%;
-  text-align: center;
-  text-align: -webkit-center;
-}
+  .l-col-3 {
+    width: 25%;
+    text-align: center;
+    text-align: -webkit-center;
+  }
 
-.col-9 {
-  width: 75%;
-  text-align: center;
-  text-align: -webkit-center;
-}
+  .l-col-4 {
+    width: 33.3333333333%;
+    text-align: center;
+    text-align: -webkit-center;
+  }
 
-.col-10 {
-  width: 83.3333333333%;
-  text-align: center;
-  text-align: -webkit-center;
-}
+  .l-col-5 {
+    width: 41.6666666667%;
+    text-align: center;
+    text-align: -webkit-center;
+  }
 
-.col-11 {
-  width: 91.6666666667%;
-  text-align: center;
-  text-align: -webkit-center;
-}
+  .l-col-6 {
+    width: 50%;
+    text-align: center;
+    text-align: -webkit-center;
+  }
 
-.col-12 {
-  width: 100%;
-  text-align: center;
-  text-align: -webkit-center;
-}
+  .l-col-7 {
+    width: 58.3333333333%;
+    text-align: center;
+    text-align: -webkit-center;
+  }
 
-.offset-1 {
-  margin-left: 8.3333333333%;
-}
+  .l-col-8 {
+    width: 66.6666666667%;
+    text-align: center;
+    text-align: -webkit-center;
+  }
 
-.offset-2 {
-  margin-left: 16.6666666667%;
-}
+  .l-col-9 {
+    width: 75%;
+    text-align: center;
+    text-align: -webkit-center;
+  }
 
-.offset-3 {
-  margin-left: 25%;
-}
+  .l-col-10 {
+    width: 83.3333333333%;
+    text-align: center;
+    text-align: -webkit-center;
+  }
 
-.offset-4 {
-  margin-left: 33.3333333333%;
-}
+  .l-col-11 {
+    width: 91.6666666667%;
+    text-align: center;
+    text-align: -webkit-center;
+  }
 
-.offset-5 {
-  margin-left: 41.6666666667%;
-}
+  .l-col-12 {
+    width: 100%;
+    text-align: center;
+    text-align: -webkit-center;
+  }
 
-.offset-6 {
-  margin-left: 50%;
-}
+  .l-offset-1 {
+    margin-left: 8.3333333333%;
+  }
 
-.offset-7 {
-  margin-left: 58.3333333333%;
-}
+  .l-offset-2 {
+    margin-left: 16.6666666667%;
+  }
 
-.offset-8 {
-  margin-left: 66.6666666667%;
-}
+  .l-offset-3 {
+    margin-left: 25%;
+  }
 
-.offset-9 {
-  margin-left: 75%;
-}
+  .l-offset-4 {
+    margin-left: 33.3333333333%;
+  }
 
-.offset-10 {
-  margin-left: 83.3333333333%
-}
+  .l-offset-5 {
+    margin-left: 41.6666666667%;
+  }
 
-.offset-11 {
-  margin-left: 91.6666666667%
-}
+  .l-offset-6 {
+    margin-left: 50%;
+  }
 
-.offset-12 {
-  margin-left: 100%
+  .l-offset-7 {
+    margin-left: 58.3333333333%;
+  }
+
+  .l-offset-8 {
+    margin-left: 66.6666666667%;
+  }
+
+  .l-offset-9 {
+    margin-left: 75%;
+  }
+
+  .l-offset-10 {
+    margin-left: 83.3333333333%
+  }
+
+  .l-offset-11 {
+    margin-left: 91.6666666667%
+  }
+
+  .l-offset-12 {
+    margin-left: 100%
+  }
 }
 
 .btn {
-  height: 36px;
+  height: 30px;
   padding: 0 12px;
   align-items: inherit;
   cursor: pointer;
