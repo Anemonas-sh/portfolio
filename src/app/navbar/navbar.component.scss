@@ -9,19 +9,19 @@
   min-height: 30px;
 }
 
-.container {
+nav {
   max-width: 1920px;
   margin: 0 auto;
 }
 
 @media (max-width: 1024px) {
-  .row.container {
+  nav > .row {
     flex-direction: column;
   }
 }
 
 @media (min-width: 1025px) {
-  .row.container {
+  nav > .row {
     flex-direction: row;
   }
 }

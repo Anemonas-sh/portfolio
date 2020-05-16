@@ -313,7 +313,7 @@ h2 {
   padding: 0 12px;
   align-items: inherit;
   cursor: pointer;
-  background: transparent linear-gradient(59deg, $primary-color 0%, $secondary-color 100%) 0 0 no-repeat padding-box;
+  background: $secondary-color;
   border-radius: 4px;
   color: white;
   max-width: 128px;
@@ -323,9 +323,9 @@ h2 {
   border: none;
 
   &.btn-plain {
-    background: white;
-    border: $primary-color solid 1px;
-    color: $primary-color;
+    background: #ffffff;
+    border: $secondary-color solid 1px;
+    color: $secondary-color;
   }
 
   span {
