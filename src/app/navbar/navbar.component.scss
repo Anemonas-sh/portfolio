@@ -9,6 +9,11 @@
   min-height: 30px;
 }
 
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 @media (max-width: 1024px) {
   .row.container {
     flex-direction: column;
