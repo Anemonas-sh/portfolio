@@ -11,7 +11,7 @@ $slide-change-timing: 3; // percentage of total animation cycle
 .wrapper {
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
-  height: 50vh;
+  height: 40vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -24,6 +24,12 @@ $slide-change-timing: 3; // percentage of total animation cycle
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+@media (max-width: 1025px) {
+  .carousel {
+    margin: 0 auto;
+  }
 }
 
 .carousel__item {
@@ -126,9 +132,69 @@ $slide-change-timing: 3; // percentage of total animation cycle
     visibility: visible;
   }
   100% {
-       transform: translateY(-100%) scale(0.2);
-       opacity: 0;
-       z-index: 3;
-       visibility: hidden;
-   }
+    transform: translateY(-100%) scale(0.2);
+    opacity: 0;
+    z-index: 3;
+    visibility: hidden;
+  }
+}
+
+@media (orientation: portrait) {
+  .wrapper {
+    width: 100%;
+    max-width: 40vh;
+    margin: 5vh auto;
+    min-height: 40vh;
+  }
+
+  .carousel__item-head {
+    top: -35px;
+    left: -35px;
+    position: absolute;
+  }
+
+  .title {
+    text-align: right;
+  }
+
+  .carousel__item-body {
+    padding: 25px 20px 16px 20px;
+  }
+
+  @keyframes carousel-animate-vertical {
+    0% {
+      transform: translateX(60%) scale(0.1);
+      opacity: 0;
+      visibility: hidden;
+    }
+    #{$slide-change-timing}%, #{$animation-steps-fraction}% {
+      transform: translateX(60%) scale(0.3);
+      opacity: 0;
+      z-index: -1;
+      visibility: visible;
+    }
+    #{$animation-steps-fraction + $slide-change-timing}%, #{$animation-steps-fraction * 2}% {
+      transform: translateX(0) scale(1);
+      opacity: 1;
+      z-index: 1;
+      visibility: visible;
+    }
+    #{($animation-steps-fraction * 2) + $slide-change-timing}%, #{$animation-steps-fraction * 3}% {
+      transform: translateX(-60%) scale(0.3);
+      opacity: 0;
+      z-index: -1;
+      visibility: visible;
+    }
+    #{($animation-steps-fraction * 3) + $slide-change-timing}% {
+      transform: translateX(-60%) scale(0.1);
+      opacity: 0;
+      visibility: visible;
+    }
+    100% {
+      transform: translateX(-100%) scale(0.0);
+      opacity: 0;
+      z-index: 3;
+      visibility: hidden;
+    }
+  }
 }
