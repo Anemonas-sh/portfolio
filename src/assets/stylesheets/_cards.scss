@@ -23,3 +23,47 @@
     padding-top: 0;
   }
 }
+
+.card.horizontal {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+
+  .title {
+    flex-grow: 1;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .content {
+    text-align: justify;
+    margin-bottom: 16px;
+  }
+
+  .action {
+    border-radius: 0 0 2px 2px;
+    background-color: inherit;
+    border-top: 1px solid rgba(160,160,160,0.2);
+    position: relative;
+    padding: 16px 0 0 0;
+    text-align: right;
+
+    a {
+      color: #ffab40;
+      margin-right: 24px;
+      -webkit-transition: color .3s ease;
+      transition: color .3s ease;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+
+  img {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 2px 0 0 2px;
+  }
+}
