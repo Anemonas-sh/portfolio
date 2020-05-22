@@ -1,5 +1,5 @@
 $animation-timing: 20s;
-$carousel-items: 5;
+$carousel-items: 4;
 $animation-delay-fraction: $animation-timing / $carousel-items;
 $animation-steps-fraction: 100 / $carousel-items;
 $slide-change-timing: 3; // percentage of total animation cycle
@@ -87,6 +87,20 @@ $slide-change-timing: 3; // percentage of total animation cycle
   font-size: 50px;
 }
 
+.carousel__item-img {
+  border-radius: 50%;
+  background-color: #f0f6f6;
+  width: 90px;
+  height: 90px;
+  padding: 0;
+  position: relative;
+  margin-right: -45px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .carousel__item-body {
   width: 100%;
   background-color: #fff;
@@ -148,6 +162,12 @@ $slide-change-timing: 3; // percentage of total animation cycle
   }
 
   .carousel__item-head {
+    top: -35px;
+    left: -35px;
+    position: absolute;
+  }
+
+  .carousel__item-img {
     top: -35px;
     left: -35px;
     position: absolute;
