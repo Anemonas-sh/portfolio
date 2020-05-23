@@ -1,5 +1,5 @@
 $animation-timing: 20s;
-$carousel-items: 4;
+$carousel-items: 5;
 $animation-delay-fraction: $animation-timing / $carousel-items;
 $animation-steps-fraction: 100 / $carousel-items;
 $slide-change-timing: 3; // percentage of total animation cycle
@@ -53,7 +53,7 @@ $slide-change-timing: 3; // percentage of total animation cycle
   text-align: right;
 
   a {
-    color: #ffab40;
+    color: #6362D7;
     margin-right: 24px;
     -webkit-transition: color .3s ease;
     transition: color .3s ease;
@@ -89,7 +89,7 @@ $slide-change-timing: 3; // percentage of total animation cycle
 
 .carousel__item-img {
   border-radius: 50%;
-  background-color: #f0f6f6;
+  background-color: #ffffff;
   width: 90px;
   height: 90px;
   padding: 0;
