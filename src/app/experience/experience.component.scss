@@ -11,7 +11,7 @@ $slide-change-timing: 3; // percentage of total animation cycle
 .wrapper {
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
-  height: 40vh;
+  margin: 120px auto 100px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -54,7 +54,6 @@ $slide-change-timing: 3; // percentage of total animation cycle
 
   a {
     color: #6362D7;
-    margin-right: 24px;
     -webkit-transition: color .3s ease;
     transition: color .3s ease;
     text-transform: uppercase;
@@ -117,13 +116,13 @@ $slide-change-timing: 3; // percentage of total animation cycle
 
 @keyframes carousel-animate-vertical {
   0% {
-    transform: translateY(60%) scale(0.2);
+    transform: translateY(60%) scale(0.3);
     opacity: 0;
     visibility: hidden;
   }
   #{$slide-change-timing}%,
   #{$animation-steps-fraction}% {
-    transform: translateY(60%) scale(0.3);
+    transform: translateY(60%) scale(0.5);
     opacity: .3;
     z-index: -1;
     visibility: visible;
@@ -135,13 +134,13 @@ $slide-change-timing: 3; // percentage of total animation cycle
     visibility: visible;
   }
   #{($animation-steps-fraction * 2) + $slide-change-timing}%, #{$animation-steps-fraction * 3}% {
-    transform: translateY(-60%) scale(0.4);
+    transform: translateY(-60%) scale(0.5);
     opacity: .3;
     z-index: -1;
     visibility: visible;
   }
   #{($animation-steps-fraction * 3) + $slide-change-timing}% {
-    transform: translateY(-60%) scale(0.2);
+    transform: translateY(-60%) scale(0.3);
     opacity: 0;
     visibility: visible;
   }
@@ -157,7 +156,6 @@ $slide-change-timing: 3; // percentage of total animation cycle
   .wrapper {
     width: 100%;
     max-width: 40vh;
-    margin: 5vh auto;
     min-height: 40vh;
   }
 
