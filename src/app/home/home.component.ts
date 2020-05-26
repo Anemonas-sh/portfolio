@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, ElementRef, OnInit} from '@angular/core';
 import {ContactService} from '../shared/contact.service';
 import {NgForm} from '@angular/forms';
 
@@ -7,17 +7,16 @@ import {NgForm} from '@angular/forms';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent{
+  isLoading = false;
 
-  constructor(private contactService: ContactService) { }
-
-  ngOnInit(): void {
-  }
+  constructor(private contactService: ContactService) {  }
 
   makeRequest(contactForm: NgForm) {
     if (contactForm.invalid) {
       return;
     }
+    this.isLoading = true;
     this.contactService.requestContact(contactForm.value).subscribe(
       res => {
         alert('Requisição de contato enviada. Aguarde um retorno!');
@@ -27,6 +26,7 @@ export class HomeComponent implements OnInit {
       },
       () => {
         contactForm.resetForm();
+        this.isLoading = false;
       }
     );
   }
