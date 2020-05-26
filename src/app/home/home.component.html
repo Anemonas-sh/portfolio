@@ -225,6 +225,15 @@
               <div *ngIf="isLoading" class="loader"><span></span></div>
             </div>
           </form>
+          <div id="alert" class="overlay" *ngIf="alertVisibility">
+            <div class="popup">
+              <a class="close" (click)="changeAlertVisibility()">&times;</a>
+              <h2>{{ alertTitle }}</h2>
+              <div class="content">
+                {{ alertMessage }}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

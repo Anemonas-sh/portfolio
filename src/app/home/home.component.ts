@@ -9,6 +9,9 @@ import {NgForm} from '@angular/forms';
 })
 export class HomeComponent{
   isLoading = false;
+  alertTitle: string;
+  alertMessage: string;
+  alertVisibility = false;
 
   constructor(private contactService: ContactService) {  }
 
@@ -19,16 +22,23 @@ export class HomeComponent{
     this.isLoading = true;
     this.contactService.requestContact(contactForm.value).subscribe(
       res => {
-        alert('Requisição de contato enviada. Aguarde um retorno!');
+        this.alertTitle = 'Sucesso';
+        this.alertMessage = 'Requisição de contato enviada. Aguarde um retorno!';
       },
       err => {
-        alert('Algo deu errado, tente novamente mais tarde!');
+        this.alertTitle = 'Erro';
+        this.alertMessage = 'Algo deu errado, tente novamente mais tarde!';
       },
       () => {
+        this.changeAlertVisibility();
         contactForm.resetForm();
         this.isLoading = false;
       }
     );
+  }
+
+  changeAlertVisibility() {
+    this.alertVisibility ? this.alertVisibility = false : this.alertVisibility = true;
   }
 
 }
