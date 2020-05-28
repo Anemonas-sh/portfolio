@@ -23,11 +23,11 @@ export class HomeComponent{
     this.contactService.requestContact(contactForm.value).subscribe(
       res => {
         this.alertTitle = 'Sucesso';
-        this.alertMessage = 'Requisição de contato enviada. Aguarde um retorno!';
+        this.alertMessage = 'Requisição de contato enviada com sucesso. Obrigado e aguarde, entraremos em contato!';
       },
       err => {
         this.alertTitle = 'Erro';
-        this.alertMessage = 'Algo deu errado, tente novamente mais tarde!';
+        this.alertMessage = 'Algo deu errado na sua solicitação, por favor tente novamente mais tarde!';
       },
       () => {
         this.changeAlertVisibility();

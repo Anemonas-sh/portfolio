@@ -221,7 +221,7 @@
               </div>
             </div>
             <div class="row no-padding">
-              <button class="btn" type="submit">Enviar <i class="fas fa-paper-plane"></i></button>
+              <button *ngIf="!isLoading" class="btn" type="submit">Enviar <i class="fas fa-paper-plane"></i></button>
               <div *ngIf="isLoading" class="loader"><span></span></div>
             </div>
           </form>
