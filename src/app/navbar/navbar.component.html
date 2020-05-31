@@ -1,18 +1,52 @@
-<nav>
-  <div class="row">
-    <div class="s-col-12 l-col-2 logo"></div>
-    <div class="navbar row no-padding s-col-12 l-offset-1 l-col-6">
-      <a class="active" href="">Home</a>
-      <a href="#about">Sobre</a>
-      <a href="#experience">Experiência</a>
-      <a href="#specialty">Especialidades</a>
+<div class="wrapper" [class.show-mobile-menu]="showMobileMenu">
+
+  <div class="mobile-menu" (clickOutside)="onClickOutside($event)">
+    <div class="header text-right">
+      <i class="fa fa-times" (click)="toggleMobileMenu(false)"></i>
     </div>
-    <div class="s-col-12 l-offset-1 l-col-2">
-      <a href="#contact">
-        <button class="btn">
-          Contato
-        </button>
-      </a>
+
+    <div class="body">
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#about">Sobre</a>
+        </li>
+        <li>
+          <a href="#experience">Experiência</a>
+        </li>
+        <li>
+          <a href="#specialty">Especialidades</a>
+        </li>
+        <li>
+          <a href="#contact">Contato</a>
+        </li>
+      </ul>
     </div>
   </div>
-</nav>
+
+  <nav>
+    <div class="row">
+      <div class="s-col-4 l-col-2 logo"></div>
+
+      <div class="l-none s-col-1 s-offset-7 align-self-center">
+        <i class="fa fa-bars" (click)="toggleMobileMenu(true)"></i>
+      </div>
+
+      <div class="navbar row no-padding s-none l-offset-1 l-col-6">
+        <a class="active" href="">Home</a>
+        <a href="#about">Sobre</a>
+        <a href="#experience">Experiência</a>
+        <a href="#specialty">Especialidades</a>
+      </div>
+      <div class="s-none l-offset-1 l-col-2">
+        <a href="#contact">
+          <button class="btn">
+            Contato
+          </button>
+        </a>
+      </div>
+    </div>
+  </nav>
+</div>

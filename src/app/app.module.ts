@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactService } from './shared/contact.service';
 import { ExperienceComponent } from './experience/experience.component';
+import {ClickOutsideDirective} from './shared/click-outside.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ExperienceComponent } from './experience/experience.component';
     NavbarComponent,
     HomeComponent,
     FooterComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    ClickOutsideDirective,
   ],
   imports: [
     BrowserModule,
