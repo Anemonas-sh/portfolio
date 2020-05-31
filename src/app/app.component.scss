@@ -7,3 +7,8 @@
 div.router-content {
   flex: 1;
 }
+
+div.app-wrapper {
+  overflow: auto;
+  scroll-behavior: smooth;
+}
