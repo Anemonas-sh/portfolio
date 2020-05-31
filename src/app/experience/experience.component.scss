@@ -155,8 +155,8 @@ $slide-change-timing: 3; // percentage of total animation cycle
 @media (orientation: portrait) {
   .wrapper {
     width: 100%;
-    max-width: 40vh;
     min-height: 40vh;
+    padding: 0 60px;
   }
 
   .carousel__item-head {
